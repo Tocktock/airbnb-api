@@ -1,0 +1,9 @@
+{
+    "python.pythonPath": "C:\\Users\\JiYoung\\.virtualenvs\\airbnb-api-7VDLGYb4\\Scripts\\python.exe",
+    "python.formatting.provider": "black",
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true,
+    "python.linting.flake8Args": [
+        "--max-line-length=88"
+    ]
+}
