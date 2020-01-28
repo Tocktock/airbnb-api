@@ -89,7 +89,7 @@ def login(request):
 
     user = authenticate(username=username, password=password)
     if user is not None:
-        encode_jwt = jwt.encode({"id": user.pk}, settings.SECRET_KEY, algorithm="HS256")
+        encode_jwt = jwt.encode({"pk": user.pk}, settings.SECRET_KEY, algorithm="HS256")
         return Response(data={"token": encode_jwt})
     else:
         return Response(status=status.HTTP_401_UNAUTHORIZED)
